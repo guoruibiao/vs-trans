@@ -2,7 +2,7 @@
 	"name": "vs-trans",
 	"displayName": "vs-trans",
 	"description": "translator in VSCode",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "guoruibiao",
 	"engines": {
 		"vscode": "^1.33.0"
