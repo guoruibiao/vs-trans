@@ -1,3 +1,4 @@
+'use strict';
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
@@ -35,7 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
 			let transret = ret.translateResult[0][0].tgt;
 			let msg = rawtext + ": " + transret;
 			vscode.window.showInformationMessage(msg);
-		});
+		});		
 		// Display a message box to the user
 		//vscode.window.showInformationMessage(text);
 	});
