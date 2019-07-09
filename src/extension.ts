@@ -28,14 +28,14 @@ export function activate(context: vscode.ExtensionContext) {
 			// 无效的选中词要特殊处理 TODO 添加规则检测
 			return false;
 		}
-		text = encodeURI(text);
-		let url = "http://fanyi.youdao.com/translate?&doctype=json&type=AUTO&i=" + text;
+		text = encodeURI("翻译 " + text);
+		let url = "http://api.qingyunke.com/api.php?key=free&appid=0&msg=" + text;
 		// vscode.window.showInformationMessage(url);
 		WebRequest.get(url).then(resp => {
 			let ret = JSON.parse(resp.content);
-			let transret = ret.translateResult[0][0].tgt;
-			let msg = rawtext + ": " + transret;
-			vscode.window.showInformationMessage(msg);
+			let transret = ret.content;
+			// let msg = rawtext + ": " + transret;
+			vscode.window.showInformationMessage(transret);
 		});		
 		// Display a message box to the user
 		//vscode.window.showInformationMessage(text);

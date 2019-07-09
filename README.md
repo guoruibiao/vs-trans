@@ -10,11 +10,12 @@
 依赖 `web-request`
 
 
-### 0.0.2
+### 0.0.6
 
 初级可用版
 
 ### 鸣谢
 多谢[Hex-ci](https://github.com/hex-ci) 关于devDependencies和dependencies的区别设置方面的指导。
+[Jason](https://github.com/JasonLi1990) 在HTTP处理方面的建议。
 
 **Enjoy!**
